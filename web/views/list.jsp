@@ -39,12 +39,12 @@
             </thead>
             <c:forEach items="${list}" var="productList">
                 <tr>
-                    <td><c:out value="${productList.id}"/> </td>
-                    <td><c:out value="${productList.product_name}"/></td>
-                    <td><c:out value="${productList.price}"/> </td>
-                    <td><c:out value="${productList.quantity}"/> </td>
-                    <td><c:out value="${productList.color}"/> </td>
-                    <td><c:out value="${productList.categoryName}"/> </td>
+                    <td><c:out value="${productList.getId}"/> </td>
+                    <td><c:out value="${productList.getProduct_name}"/></td>
+                    <td><c:out value="${productList.getPrice}"/> </td>
+                    <td><c:out value="${productList.getQuantity}"/> </td>
+                    <td><c:out value="${productList.getColor}"/> </td>
+                    <td><c:out value="${productList.getCategoryName}"/> </td>
                     <td class="text-center"><a class='btn btn-info btn-xs' href="/product?action=updateProduct&id=${productList.id}"><span class="glyphicon glyphicon-edit"></span> Edit</a>
                         <a href="/product?action=deleteProduct&id=${productList.id}" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
                 </tr>
